@@ -47,4 +47,4 @@ class TestCalc:
 
 
 if __name__ == '__main__':
-    pytest.main(['-s', '-v', 'test_cacu.py'])
+    pytest.main(['-vs', 'test_cacu.py'])

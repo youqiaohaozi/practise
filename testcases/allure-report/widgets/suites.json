@@ -1,0 +1,17 @@
+{
+  "total": 1,
+  "items": [
+    {
+      "uid": "4ce7f149d937b4fbff99710761238ff1",
+      "name": "test_cacu_yaml",
+      "statistic": {
+        "failed": 4,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 16,
+        "unknown": 0,
+        "total": 20
+      }
+    }
+  ]
+}

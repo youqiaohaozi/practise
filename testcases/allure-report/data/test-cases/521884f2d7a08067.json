@@ -1,0 +1,119 @@
+{
+  "uid": "521884f2d7a08067",
+  "name": "test_mul[nagetive]",
+  "fullName": "test_cacu_yaml.TestCalc#test_mul",
+  "historyId": "63bca41b0b7ecc0be610a324deb93a5a",
+  "time": {
+    "start": 1604461033147,
+    "stop": 1604461033147,
+    "duration": 0
+  },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "setprint",
+      "time": {
+        "start": 1604461033146,
+        "stop": 1604461033146,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    }
+  ],
+  "afterStages": [
+    {
+      "name": "setprint::0",
+      "time": {
+        "start": 1604461033149,
+        "stop": 1604461033149,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "tag",
+      "value": "run(order=3)"
+    },
+    {
+      "name": "suite",
+      "value": "test_cacu_yaml"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-FCPOG81"
+    },
+    {
+      "name": "thread",
+      "value": "5224-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_cacu_yaml"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "-2"
+    },
+    {
+      "name": "b",
+      "value": "-3"
+    },
+    {
+      "name": "expect",
+      "value": "6"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": [
+      "run(order=3)"
+    ]
+  },
+  "source": "521884f2d7a08067.json",
+  "parameterValues": [
+    "-2",
+    "-3",
+    "6"
+  ]
+}

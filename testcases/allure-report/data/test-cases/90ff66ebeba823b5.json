@@ -1,0 +1,159 @@
+{
+  "uid": "90ff66ebeba823b5",
+  "name": "test_add[nagetives]",
+  "fullName": "test_cacu_yaml.TestCalc#test_add",
+  "historyId": "2985e304795ba2740ef193f8e60e3a75",
+  "time": {
+    "start": 1604461033074,
+    "stop": 1604461033075,
+    "duration": 1
+  },
+  "status": "failed",
+  "statusMessage": "AssertionError: assert -3 == 3\n  +-3\n  -3",
+  "statusTrace": "self = <testcases.test_cacu_yaml.TestCalc object at 0x000001E4E8C37288>, setprint = None, fristofall = None, a = -1, b = -2, expect = 3\n\n    @pytest.mark.run(order=1)\n    @pytest.mark.parametrize('a,b,expect',datas['add']['datas'],ids=datas['add']['ids'])\n    def test_add(self,setprint,fristofall, a, b, expect):\n        # calc = Calculator()\n        result = self.calc.add(a, b)\n>       assert result == expect\nE       assert -3 == 3\nE         +-3\nE         -3\n\ntest_cacu_yaml.py:25: AssertionError",
+  "flaky": false,
+  "newFailed": false,
+  "beforeStages": [
+    {
+      "name": "fristofall",
+      "time": {
+        "start": 1604461033029,
+        "stop": 1604461033029,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    },
+    {
+      "name": "setprint",
+      "time": {
+        "start": 1604461033074,
+        "stop": 1604461033074,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    }
+  ],
+  "afterStages": [
+    {
+      "name": "fristofall::0",
+      "time": {
+        "start": 1604461033210,
+        "stop": 1604461033210,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    },
+    {
+      "name": "setprint::0",
+      "time": {
+        "start": 1604461033081,
+        "stop": 1604461033081,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false,
+      "stepsCount": 0
+    }
+  ],
+  "labels": [
+    {
+      "name": "tag",
+      "value": "run(order=1)"
+    },
+    {
+      "name": "suite",
+      "value": "test_cacu_yaml"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-FCPOG81"
+    },
+    {
+      "name": "thread",
+      "value": "5224-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_cacu_yaml"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "a",
+      "value": "-1"
+    },
+    {
+      "name": "b",
+      "value": "-2"
+    },
+    {
+      "name": "expect",
+      "value": "3"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [
+      {
+        "name": "Product defects",
+        "matchedStatuses": [],
+        "flaky": false
+      }
+    ],
+    "tags": [
+      "run(order=1)"
+    ]
+  },
+  "source": "90ff66ebeba823b5.json",
+  "parameterValues": [
+    "-1",
+    "-2",
+    "3"
+  ]
+}

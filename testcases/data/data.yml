@@ -1,0 +1,65 @@
+add:
+  datas:
+    - [1, 1, 2]
+    - [10, 10, 15]
+    - [-1, -2, 3]
+    - [-1, 2, 1]
+    - [0.5, 0.7, 1]
+    - [0.2, 0.3, 0.5]
+
+  ids:
+    - "positives"
+    - "positive1"
+    - "nagetives"
+    - "positive+nagetive"
+    - "floats"
+    - "floats1"
+
+add_float:
+  datas:
+    - [0.5, 0.7, 1]
+    - [0.2, 0.3, 0.5]
+  ids:
+    - "floats"
+    - "floats1"
+
+sub:
+  datas:
+    - [0.5, 0.7, -0.2]
+    - [5, 3, 2]
+    - [-2,-3,1]
+  ids:
+    - "floats"
+    - "positive"
+    - "nagetive"
+
+mul:
+  datas:
+    - [0.5, 0.7, 0.35]
+    - [5, 3, 15]
+    - [-2, -3, 6]
+    - [2, -2, -4]
+    - [1, 0, 1]
+  ids:
+    - "floats"
+    - "positive"
+    - "nagetive"
+    - "pos+nag"
+    - "zero"
+
+div:
+  datas:
+    - [1, 1, 1]
+    - [10, -2, -5]
+    - [-2, -1, 2]
+    - [3, 2, 1.5]
+    - [0.7, 0.2, 3.5]
+    - [0.3, 0.15, 2]
+  ids:
+    - "positives"
+    - "pos/nage"
+    - "nagetives"
+    - "expectfloat"
+    - "floats"
+    - "expectpositive"
+
