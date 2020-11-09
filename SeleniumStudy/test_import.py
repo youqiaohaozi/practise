@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 
-class TestCompanwx():
+class TestCompanwx:
 
     @pytest.mark.skip
     def test_getcookies(self):
