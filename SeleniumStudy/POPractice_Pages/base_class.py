@@ -35,7 +35,3 @@ class BaseClass:
         element: WebElement = WebDriverWait(self.driver, wait_time).until(
             expected_conditions.visibility_of_element_located(locator))
         return element
-
-    # def wait_for_next(self,locator):
-    #     try:
-    #         self.driver.find_element(*locator).click()

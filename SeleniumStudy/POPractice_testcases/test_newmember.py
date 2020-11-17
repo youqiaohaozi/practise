@@ -8,9 +8,9 @@ class TestAddmember:
 
     # @pytest.mark.skip
     def test_addmember(self):
-        username = 'addmember3'
-        userlable = 'addmember3'
-        userphone = '13900000001'
+        username = 'addmember4'
+        userlable = 'addmember4'
+        userphone = '13900000002'
         contactlist = self.home.goto_contactlist()
 
         # ##从首页进入添加成员

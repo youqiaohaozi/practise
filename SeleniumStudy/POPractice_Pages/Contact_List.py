@@ -10,14 +10,21 @@ from SeleniumStudy.POPractice_Pages.base_class import BaseClass
 
 
 class ContactList(BaseClass):
+    # def __init__(self, driver: WebDriver):
+    #     self.driver = driver
 
-    # def __init__(self,driver: WebDriver):
-    #     self.driver=driver
 
     def addmember(self):
         ##点击添加成员按钮进入添加页面
-        locator = (By.CSS_SELECTOR, ".js_add_member:nth-child(2)")
-        self.wait_for_click(locator).click()
+        ##处理点击一次没有响应的问题
+        def wait_for_next(x: WebDriver):
+            try:
+                x.find_element(By.CSS_SELECTOR, ".js_add_member:nth-child(2)").click()
+                return x.find_element(By.ID, "username")
+            except:
+                return False
+
+        WebDriverWait(self.driver, 10).until(wait_for_next)
         return AddMember(self.driver)
 
     ##成员列表中查找成员是否存在
