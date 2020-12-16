@@ -49,5 +49,3 @@ class Test_WorkWechat:
         result=WebDriverWait(self.driver,10).until(lambda x:'打卡成功' in x.page_source)
         print(result)
         assert result
-
-        sleep(3)
