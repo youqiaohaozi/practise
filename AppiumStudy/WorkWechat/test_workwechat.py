@@ -2,7 +2,6 @@ from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from time import sleep
 
 
 class Test_WorkWechat:
@@ -29,7 +28,9 @@ class Test_WorkWechat:
 
     def test_daka(self):
         ##进入工作台页面
-        ele=WebDriverWait(self.driver,10).until(expected_conditions.element_to_be_clickable((MobileBy.XPATH,'//*[@resource-id="com.tencent.wework:id/dqk"]//*[@text="工作台"]')))
+        # ele=WebDriverWait(self.driver,10).until(expected_conditions.element_to_be_clickable((MobileBy.XPATH,'//*[@resource-id="com.tencent.wework:id/dqk"]//*[@text="工作台"]')))
+        ele = WebDriverWait(self.driver, 10).until(
+            expected_conditions.element_to_be_clickable((MobileBy.XPATH, '//*[@resource-id="com.tencent.wework:id/dqn" and @text="工作台"]')))
         ele.click()
 
         ##滚动滑动屏幕，查到打卡并进入打卡页面
