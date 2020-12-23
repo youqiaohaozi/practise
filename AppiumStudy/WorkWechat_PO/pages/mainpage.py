@@ -5,7 +5,7 @@ from AppiumStudy.WorkWechat_PO.pages.contactpage import ContactPage
 
 class MainPage(BasePage):
     def goto_contact_list(self):
-        self.find_xpath((MobileBy.XPATH, "//*[@resource-id='com.tencent.wework:id/dqn' and @text='通讯录']")).click()
+        self.find_click((MobileBy.XPATH, "//*[@resource-id='com.tencent.wework:id/dqn' and @text='通讯录']"))
         return ContactPage(self.driver)
 
     def goto_work_desk(self):

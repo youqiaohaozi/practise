@@ -1,16 +1,19 @@
+import yaml
 from AppiumStudy.WorkWechat_PO.pages.mainpage import MainPage
 from AppiumStudy.WorkWechat_PO.pages.basepage import BasePage
 from appium import webdriver
 
+with open('../datas/base_data.yml') as f:
+    myconfig = yaml.safe_load(f)
+    desired_caps = myconfig['desirecaps']
+    ip = myconfig['server']['ip']
+    port = myconfig['server']['port']
+
+
 class App(BasePage):
     def start(self):      ##启动APP
         if self.driver is None:
-            desired_caps = {'platformName': 'Android', 'platformVersion': '6.0', 'deviceName': '127.0.0.1:7555',
-                            'appPackage': 'com.tencent.wework', 'appActivity': '.launch.LaunchSplashActivity',
-                            'noReset': 'True', "dontStopAppOnReset": "true", 'skipDeviceInitialization': 'true',
-                            'skipServerInstallation': 'true'}
-
-            self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+            self.driver = webdriver.Remote('http://'+ip+':'+port+'/wd/hub', desired_caps)
             self.driver.implicitly_wait(3)
         else:
             self.driver.launch_app()

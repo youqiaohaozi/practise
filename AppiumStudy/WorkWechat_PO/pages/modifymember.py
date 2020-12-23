@@ -7,5 +7,5 @@ class ModifyMember(BasePage):
         pass
 
     def delete_member(self):
-        self.find_xpath((MobileBy.XPATH, "//*[@text='删除成员']")).click()
-        self.find_xpath((MobileBy.XPATH, "//*[@text='确定']")).click()
+        self.find_click((MobileBy.XPATH, "//*[@text='删除成员']"))
+        self.find_click((MobileBy.XPATH, "//*[@text='确定']"))
