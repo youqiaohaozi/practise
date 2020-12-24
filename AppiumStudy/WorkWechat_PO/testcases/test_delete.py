@@ -15,11 +15,11 @@ class TestContact:
     def teardown_class(self):
         self.session.stop()
 
-    # @pytest.mark.parametrize("value","手机")
-    def test_delete_name_contains(self):
-        result_list = self.search_page.search_namelist("12")
+    @pytest.mark.parametrize("name", ['dd'])
+    def test_delete_name_contains(self, name):
+        result_list = self.search_page.search_namelist(name)
         print(result_list)
-        for name in result_list:
-            self.search_page.goto_detail(name).goto_modify().delete_member()
-        result_list = self.search_page.search("12")
+        for item in result_list:
+            self.search_page.goto_detail(item).goto_modify().delete_member()
+        result_list = self.search_page.search(name)
         assert not result_list
