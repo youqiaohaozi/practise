@@ -1,0 +1,18 @@
+goto_market:
+  - by: xpath
+    locator: '//*[@resource-id="com.xueqiu.android:id/post_status"]'
+    action: click
+
+  - by: xpath
+    locator: '//*[@resource-id="com.xueqiu.android:id/tab_name" and @text="行情"]'
+    action: click
+
+goto_trade:
+  - by: xpath
+    locator: '//*[@resource-id="com.xueqiu.android:id/tab_name" and @text="交易"]'
+    action: click
+
+goto_mine:
+  - by: xpath
+    locator: '//*[@resource-id="com.xueqiu.android:id/tab_name" and @text="我的"]'
+    action: click
